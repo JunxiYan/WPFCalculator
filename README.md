@@ -1,1 +1,1 @@
-# WpfCalculator
+# WPFCalculator
