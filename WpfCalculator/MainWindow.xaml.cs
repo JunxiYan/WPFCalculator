@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using StringMath;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -120,9 +121,7 @@ namespace WpfCalculator
 
         private void Solution_Click(object sender, RoutedEventArgs e)
         {
-            CalculatorCore calculatorCore = new CalculatorCore();
-            textblock.Text = calculatorCore.Calculate(textblock.Text);
-
+            textblock.Text = textblock.Text.Eval().ToString();
         }
     }
 }
