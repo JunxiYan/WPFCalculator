@@ -52,33 +52,28 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Grid x:Name="Block" Background="White" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">
-            <TextBlock Grid.Row="0" Text="0" FontSize="45" HorizontalAlignment="Right" VerticalAlignment="Center"  />
+        <Grid  Background="White" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">
+            <TextBlock x:Name="textblock" Grid.Row="0" Text="" FontSize="45" HorizontalAlignment="Right" VerticalAlignment="Center"  />
         </Grid>
-
-        <Button x:Name="ButtonPercentage" Grid.Row="1" Grid.Column="0" Content="%" />
-        <Button x:Name="ButtonCE" Grid.Row="1" Grid.Column="1" Content="CE" />
-        <Button x:Name="ButtonC" Grid.Row="1" Grid.Column="2" Content="C" />
-        <Button x:Name="ButtonDel" Grid.Row="1" Grid.Column="3" Content="Del" />
-        <Button x:Name="ButtonOppsite" Grid.Row="2" Grid.Column="0" Content="1/x" />
-        <Button x:Name="ButtonSqu" Grid.Row="2" Grid.Column="1" Content="x^2" />
-        <Button x:Name="ButtonSqrt" Grid.Row="2" Grid.Column="2" Content="Sqrt" />
-        <Button x:Name="ButtonDivide" Grid.Row="2" Grid.Column="3" Content="/" />
-        <Button x:Name="Button7" Grid.Row="3" Grid.Column="0" Content="7" />
-        <Button x:Name="Button8" Grid.Row="3" Grid.Column="1" Content="8" />
-        <Button x:Name="Button9" Grid.Row="3" Grid.Column="2" Content="9" />
-        <Button x:Name="ButtonMulti" Grid.Row="3" Grid.Column="3" Content="*" />
-        <Button x:Name="Button4" Grid.Row="4" Grid.Column="0" Content="4" />
-        <Button x:Name="Button5" Grid.Row="4" Grid.Column="1" Content="5" />
-        <Button x:Name="Button6" Grid.Row="4" Grid.Column="2" Content="6" />
-        <Button x:Name="ButtonMinus" Grid.Row="4" Grid.Column="3" Content="-" />
+        <Button x:Name="ButtonRightParen" Grid.Row="2" Grid.Column="2" Content=")" Click="ButtonRightParen_Click" />
+        <Button x:Name="ButtonLeftParen" Grid.Row="2" Grid.Column="1" Content="(" Click="ButtonLeftParen_Click" />
+        <Button x:Name="ButtonDel" Grid.Row="2" Grid.Column="0" Content="Del" Click="ButtonDel_Click" />
+        <Button x:Name="ButtonDivide" Grid.Row="2" Grid.Column="3" Content="/" Click="ButtonDivide_Click" />
+        <Button x:Name="Button7" Grid.Row="3" Grid.Column="0" Content="7" Click="Button7_Click" />
+        <Button x:Name="Button8" Grid.Row="3" Grid.Column="1" Content="8" Click="Button8_Click" />
+        <Button x:Name="Button9" Grid.Row="3" Grid.Column="2" Content="9" Click="Button9_Click" />
+        <Button x:Name="ButtonMulti" Grid.Row="3" Grid.Column="3" Content="*" Click="ButtonMulti_Click" />
+        <Button x:Name="Button4" Grid.Row="4" Grid.Column="0" Content="4" Click="Button4_Click" />
+        <Button x:Name="Button5" Grid.Row="4" Grid.Column="1" Content="5" Click="Button5_Click" />
+        <Button x:Name="Button6" Grid.Row="4" Grid.Column="2" Content="6" Click="Button6_Click" />
+        <Button x:Name="ButtonMinus" Grid.Row="4" Grid.Column="3" Content="-" Click="ButtonMinus_Click" />
         <Button x:Name="Button1" Grid.Row="5" Grid.Column="0" Content="1" Click="Button1_Click"  />
-        <Button x:Name="Button2" Grid.Row="5" Grid.Column="1" Content="2" />
-        <Button x:Name="Button3" Grid.Row="5" Grid.Column="2" Content="3" />
-        <Button x:Name="ButtonPlus" Grid.Row="5" Grid.Column="3" Content="+" />
-        <Button x:Name="ButtonChangeMark" Grid.Row="6" Grid.Column="0" Content="+/-" />
-        <Button x:Name="Button0" Grid.Row="6" Grid.Column="1" Content="0" />
-        <Button x:Name="ButtonPoint" Grid.Row="6" Grid.Column="2" Content="."  />
-        <Button x:Name="Solution" Grid.Row="6" Grid.Column="3" Content="=" Background="#FF00C8FF"  />
+        <Button x:Name="Button2" Grid.Row="5" Grid.Column="1" Content="2" Click="Button2_Click" />
+        <Button x:Name="Button3" Grid.Row="5" Grid.Column="2" Content="3" Click="Button3_Click" />
+        <Button x:Name="ButtonPlus" Grid.Row="5" Grid.Column="3" Content="+" Click="ButtonPlus_Click" />
+        <Button x:Name="ButtonChangeMark" Grid.Row="6" Grid.Column="0" Content="+/-" Click="ButtonChangeMark_Click" />
+        <Button x:Name="Button0" Grid.Row="6" Grid.Column="1" Content="0" Click="Button0_Click" />
+        <Button x:Name="ButtonPoint" Grid.Row="6" Grid.Column="2" Content="." Click="ButtonPoint_Click"  />
+        <Button x:Name="Solution" Grid.Row="6" Grid.Column="3" Content="=" Background="#FF00C8FF" Click="Solution_Click"  />
     </Grid>
 </Window>
