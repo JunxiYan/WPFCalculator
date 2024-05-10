@@ -27,12 +27,6 @@ namespace WpfCalculator
         {
             textblock.Text  += "1";
         }
-
-        private void Solution_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
         private void Button2_Click(object sender, RoutedEventArgs e)
         {
             textblock.Text += "2";
@@ -122,6 +116,13 @@ namespace WpfCalculator
         private void ButtonRightParen_Click(object sender, RoutedEventArgs e)
         {
             textblock.Text += ")";
+        }
+
+        private void Solution_Click(object sender, RoutedEventArgs e)
+        {
+            CalculatorCore calculatorCore = new CalculatorCore();
+            textblock.Text = calculatorCore.Calculate(textblock.Text);
+
         }
     }
 }
