@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfCalculator"
         mc:Ignorable="d"
-        Title="Calculator" Height="600" Width="500" MinHeight="450" MinWidth="375">
+        Title="Calculator" Height="600" Width="450" MinHeight="450" MinWidth="325">
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="FontSize" Value="20" />
@@ -56,29 +56,29 @@
             <TextBlock Grid.Row="0" Text="0" FontSize="45" HorizontalAlignment="Right" VerticalAlignment="Center"  />
         </Grid>
 
-        <Button Grid.Row="1" Grid.Column="0" Content="%" />
-        <Button Grid.Row="1" Grid.Column="1" Content="CE" />
-        <Button Grid.Row="1" Grid.Column="2" Content="C" />
-        <Button Grid.Row="1" Grid.Column="3" Content="Back" />
-        <Button Grid.Row="2" Grid.Column="0" Content="1/x" />
-        <Button Grid.Row="2" Grid.Column="1" Content="x^2" />
-        <Button Grid.Row="2" Grid.Column="2" Content="Sqrt" />
-        <Button Grid.Row="2" Grid.Column="3" Content="/" />
-        <Button Grid.Row="3" Grid.Column="0" Content="7" />
-        <Button Grid.Row="3" Grid.Column="1" Content="8" />
-        <Button Grid.Row="3" Grid.Column="2" Content="9" />
-        <Button Grid.Row="3" Grid.Column="3" Content="*" />
-        <Button Grid.Row="4" Grid.Column="0" Content="4" />
-        <Button Grid.Row="4" Grid.Column="1" Content="5" />
-        <Button Grid.Row="4" Grid.Column="2" Content="6" />
-        <Button Grid.Row="4" Grid.Column="3" Content="-" />
-        <Button Grid.Row="5" Grid.Column="0" Content="1" />
-        <Button Grid.Row="5" Grid.Column="1" Content="2" />
-        <Button Grid.Row="5" Grid.Column="2" Content="3" />
-        <Button Grid.Row="5" Grid.Column="3" Content="+" />
-        <Button Grid.Row="6" Grid.Column="0" Content="+/-" />
-        <Button Grid.Row="6" Grid.Column="1" Content="0" />
-        <Button Grid.Row="6" Grid.Column="2" Content="."  />
-        <Button Grid.Row="6" Grid.Column="3" Content="=" Background="#FF00C8FF"  />
+        <Button x:Name="ButtonPercentage" Grid.Row="1" Grid.Column="0" Content="%" />
+        <Button x:Name="ButtonCE" Grid.Row="1" Grid.Column="1" Content="CE" />
+        <Button x:Name="ButtonC" Grid.Row="1" Grid.Column="2" Content="C" />
+        <Button x:Name="ButtonDel" Grid.Row="1" Grid.Column="3" Content="Del" />
+        <Button x:Name="ButtonOppsite" Grid.Row="2" Grid.Column="0" Content="1/x" />
+        <Button x:Name="ButtonSqu" Grid.Row="2" Grid.Column="1" Content="x^2" />
+        <Button x:Name="ButtonSqrt" Grid.Row="2" Grid.Column="2" Content="Sqrt" />
+        <Button x:Name="ButtonDivide" Grid.Row="2" Grid.Column="3" Content="/" />
+        <Button x:Name="Button7" Grid.Row="3" Grid.Column="0" Content="7" />
+        <Button x:Name="Button8" Grid.Row="3" Grid.Column="1" Content="8" />
+        <Button x:Name="Button9" Grid.Row="3" Grid.Column="2" Content="9" />
+        <Button x:Name="ButtonMulti" Grid.Row="3" Grid.Column="3" Content="*" />
+        <Button x:Name="Button4" Grid.Row="4" Grid.Column="0" Content="4" />
+        <Button x:Name="Button5" Grid.Row="4" Grid.Column="1" Content="5" />
+        <Button x:Name="Button6" Grid.Row="4" Grid.Column="2" Content="6" />
+        <Button x:Name="ButtonMinus" Grid.Row="4" Grid.Column="3" Content="-" />
+        <Button x:Name="Button1" Grid.Row="5" Grid.Column="0" Content="1" Click="Button1_Click"  />
+        <Button x:Name="Button2" Grid.Row="5" Grid.Column="1" Content="2" />
+        <Button x:Name="Button3" Grid.Row="5" Grid.Column="2" Content="3" />
+        <Button x:Name="ButtonPlus" Grid.Row="5" Grid.Column="3" Content="+" />
+        <Button x:Name="ButtonChangeMark" Grid.Row="6" Grid.Column="0" Content="+/-" />
+        <Button x:Name="Button0" Grid.Row="6" Grid.Column="1" Content="0" />
+        <Button x:Name="ButtonPoint" Grid.Row="6" Grid.Column="2" Content="."  />
+        <Button x:Name="Solution" Grid.Row="6" Grid.Column="3" Content="=" Background="#FF00C8FF"  />
     </Grid>
 </Window>
